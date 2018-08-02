@@ -17,7 +17,7 @@
     -->
     <link rel="stylesheet" href="./css/main.css" type="text/css">
     <link rel="stylesheet" href="./css/form.css" type="text/css">
-    <link rel="stylesheet" href="./css/contact.css" type="text/css">
+    <link rel="stylesheet" href="./css/test.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
 </head>
@@ -55,20 +55,20 @@
                 <div>
                     <label class="formlabel" for="fname">First name</label>
                     <input type="text" id="fname" class="formcss" placeholder="Your First name..." required>
-                    <span class="form_hint">Firstname is required</span>    
+                    <span class="form_hint">Firstname is required</span>     
                 </div>
 
                 <div>
                     <label class="formlabel" for="lname">Last name</label>
                     <input type="text" id="lname" class="formcss" placeholder="Your Last name..." required>
-                    <span class="form_hint">Lastname is required</span>     
+                    <span class="form_hint">Lastname is required</span> 
                 </div>
 
                 <div>
                     <i class="fas fa-envelope-square fa-2x"></i>
                     <label class="formlabel" for="email">Email</label>
-                    <input type="email" id="email" class="formcss" placeholder="Your email address..." required>
-                    <span class="form_hint">Enter valid email format</span>
+                    <input type="email" id="email" class="formcss" pattern=".+@comworks.com" placeholder="Your email address..." required>
+                    <span class="form_hint">Enter proper email format, i.e. someone@example.com</span>
                 </div>
 
                 <div>

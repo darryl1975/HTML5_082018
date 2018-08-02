@@ -1,23 +1,22 @@
 .contact_form label {
     width: 130px;
-    display: inline-block;
-    text-align: center;
-    vertical-align: top;
     display: block;
+    text-align: left;
+    vertical-align: top;
 }
 
 .contact_form input {
-    width : 220px;
-    height : 20px;
-    padding: 5px 5px;
+    width: 400px;
+    height: 20px;
+    /*padding: 5px 5px;*/
 }
 
 .contact_form textarea {
-    width : 300px;
+    width: 400px;
 }
 
-.contact_form button {
-    margin-left: 150px;
+.contact_form select {
+    width: 400px;
 }
 
 .contact_form input, .contact_form textarea {
@@ -25,52 +24,41 @@
     box-shadow: 0px 0px 3px #ccc, 0px 10px 15px #eee inset;
     border-radius: 5px;
     padding-right: 15px;
-    -moz-transition: padding .2s;
-    -webkit-transiton: padding .2s;
-    -o-transition: padding .2s;
-    transition: padding .2s;
+    -moz-transition: padding .3s;
+    -webkit-transition: padding .3s;
+    transition: padding .3s; 
 }
 
 .contact_form input:focus, .contact_form textarea:focus {
     background: #ffffff;
     border: 1px solid #555;
     box-shadow: 0px 0px 3px #aaa;
-    padding-right: 30px;
+    padding-right: 50px;
 }
 
 .contact_form input:required, .contact_form textarea:required {
-    background: #fff url('../images/red_asterisk.png') no-repeat 98% center;
+    background: #ffffff url('../images/red_asterisk.png') no-repeat 98% center;
 }
 
 .contact_form input:valid, .contact_form textarea:valid {
-    background: #fff url('../images/valid.png') no-repeat 98% center;
-    box-shadow: 0 0 5px #5cd053;
+    background: #ffffff url('../images/valid.png') no-repeat 98% center;
     border-color: greenyellow;
 }
 
 .contact_form input:invalid, .contact_form textarea:invalid {
-    background: #fff url('../images/invalid.png') no-repeat 98% center;
-    box-shadow: 0 0 5px #b03535;
+    background: #ffffff url('../images/invalid.png') no-repeat 98% center;
     border-color: red;
 }
 
-
-.contact_form input:focus + .form_hint { 
+.contact_form input:focus + .form_hint {
     display: inline;
 }
 
 .contact_form input:required:valid + .form_hint {
     background: #28921f;
-    /* display: none; */
+    display: none;
 }
 
-.contact_form input:required:valid + .form_hint::before {
-    color: #28921f;
-}
-
-*:focus {
-    outline: none;
-}
 
 .form_hint {
     font-size: 10px;
@@ -83,7 +71,7 @@
     display: none;
 }
 
-.form_hint::before {
+.form_hint:before {
     content:"\25C0";
     position: absolute;
     color: #d45252;
